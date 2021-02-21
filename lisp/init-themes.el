@@ -54,6 +54,7 @@
     (add-to-list 'dimmer-exclusion-predicates 'sanityinc/display-non-graphic-p)))
 
 (set-frame-font "-*-FiraCode Nerd Font Mono-normal-normal-normal-*-14-*-*-*-m-0-iso10646-1")
+(setq default-frame-alist '((font . "-*-FiraCode Nerd Font Mono-normal-normal-normal-*-14-*-*-*-m-0-iso10646-1")))
 
 (provide 'init-themes)
 ;;; init-themes.el ends here
