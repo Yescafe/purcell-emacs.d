@@ -108,5 +108,13 @@ Call a second time to restore the original window configuration."
   (add-hook 'after-init-hook (apply-partially 'windswap-default-keybindings 'shift 'control)))
 
 
+
+(require-package 'buffer-move)
+
+(global-set-key (kbd "C-c [") 'buf-move-left)
+(global-set-key (kbd "C-c ]") 'buf-move-right)
+(global-set-key (kbd "C-c {") 'buf-move-up)
+(global-set-key (kbd "C-c }") 'buf-move-down)
+
 (provide 'init-windows)
 ;;; init-windows.el ends here
