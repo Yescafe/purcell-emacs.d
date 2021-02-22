@@ -111,10 +111,10 @@ Call a second time to restore the original window configuration."
 
 (require-package 'buffer-move)
 
-(global-set-key (kbd "C-c [") 'buf-move-left)
-(global-set-key (kbd "C-c ]") 'buf-move-right)
-(global-set-key (kbd "C-c {") 'buf-move-up)
-(global-set-key (kbd "C-c }") 'buf-move-down)
+(global-set-key (kbd "M-s <left>") 'buf-move-left)
+(global-set-key (kbd "M-s <right>") 'buf-move-right)
+(global-set-key (kbd "M-s <up>") 'buf-move-up)
+(global-set-key (kbd "M-s <down>") 'buf-move-down)
 
 (provide 'init-windows)
 ;;; init-windows.el ends here
