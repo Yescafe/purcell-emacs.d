@@ -9,9 +9,7 @@
 (require-package 'dracula-theme)
 
 ;; Customize theme
-(setq-default custom-enabled-themes '(dracula))
-(reapply-themes)
-
+(setq-default custom-enabled-themes '(sanityinc-tomorrow-bright))
 
 ;;------------------------------------------------------------------------------
 ;; Toggle themes
