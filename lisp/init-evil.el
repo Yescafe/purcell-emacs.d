@@ -858,7 +858,9 @@ If N > 0, only occurrences in current N lines are renamed."
                       (t my-default-color))))
     (set-face-background 'mode-line (car color))
     (set-face-foreground 'mode-line (cdr color))))
-(add-hook 'post-command-hook #'my-show-evil-state)
+
+;; purcell config rainbow-mode <-> redguardtoo config my-show-evil-state conflict
+;; (add-hook 'post-command-hook #'my-show-evil-state)
 ;; }}
 
 ;; {{ evil-nerd-commenter
