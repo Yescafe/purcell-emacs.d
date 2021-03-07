@@ -2,30 +2,48 @@
 ;;; Commentary:
 ;;; Code:
 
-;; Get Spacemacs theme
+;; Get themes
+;; spacemacs
 (require-package 'spacemacs-theme)
+;; dracula
+(require-package 'dracula-theme)
 
 ;; Customize theme
-(setq-default custom-enabled-themes '(spacemacs-dark))
+(setq-default custom-enabled-themes '(dracula))
+(reapply-themes)
+
 
 ;;------------------------------------------------------------------------------
-;; Toggle between spacemacs light and dark
+;; Toggle themes
 ;;------------------------------------------------------------------------------
-(defun slight ()
-  "Activate spacemacs light color theme."
+(defun theme-spacemacs-light ()
   (interactive)
   (setq custom-enabled-themes '(spacemacs-light))
   (reapply-themes))
 
-(defun sdark ()
-  "Activate spacemacs dark color theme."
+(defun theme-spacemacs-dark ()
   (interactive)
   (setq custom-enabled-themes '(spacemacs-dark))
   (reapply-themes))
 
+(defun theme-dracula ()
+  (interactive)
+  (setq custom-enabled-themes '(dracula))
+  (reapply-themes))
+
+
 ;; Set font face
-(set-frame-font "-*-FiraCode Nerd Font Mono-normal-normal-normal-*-14-*-*-*-m-0-iso10646-1")
-(setq default-frame-alist '((font . "-*-FiraCode Nerd Font Mono-normal-normal-normal-*-14-*-*-*-m-0-iso10646-1")))
+(set-frame-font "Iosevka SS05-14")
+(setq default-frame-alist '((font . "Iosevka SS05-14")))
+
+
+;; Set default window size
+(add-to-list 'initial-frame-alist '(fullscreen . maximized))
+(add-to-list 'default-frame-alist '(fullscreen . maximized))
+(add-hook 'before-make-frame-hook
+          #'(lambda ()
+              (add-to-list 'initial-frame-alist '(fullscreen . maximized))
+              (add-to-list 'default-frame-alist '(fullscreen . maximized))))
 
 
 (provide 'init-face)

@@ -11,6 +11,11 @@
 (require-package 'undo-fu)
 (require-package 'evil-escape)
 (require-package 'general)
+(require-package 'evil-matchit)
+(require-package 'evil-visualstar)
+(require-package 'evil-nerd-commenter)
+(require-package 'evil-find-char-pinyin)
+(require-package 'evil-exchange)
 
 ;; util functions
 (defun my-run-with-idle-timer (seconds func)
