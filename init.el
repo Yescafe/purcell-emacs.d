@@ -157,6 +157,7 @@
 
 ;; Custom
 (require 'init-face)
+(require 'init-evil)
 
 ;;----------------------------------------------------------------------------
 ;; Allow access from emacsclient
