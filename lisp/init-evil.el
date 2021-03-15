@@ -16,6 +16,7 @@
 (require-package 'evil-nerd-commenter)
 (require-package 'evil-find-char-pinyin)
 (require-package 'evil-exchange)
+(require-package 'key-chord)
 
 ;; util functions
 (defun my-run-with-idle-timer (seconds func)
@@ -278,6 +279,12 @@ If the character before and after CH is space or tab, CH is NOT slash"
 (setq-default evil-escape-delay 0.3)
 (setq evil-escape-excluded-major-modes '(dired-mode))
 (setq-default evil-escape-key-sequence "kj")
+;; multiple evil-escape
+;; (key-chord-mode 1)
+;; (key-chord-define evil-insert-state-map "kj" 'evil-escape)
+;; (key-chord-define evil-insert-state-map "jk" 'evil-escape)
+;; (key-chord-define evil-insert-state-map "jj" 'evil-escape)
+;; (key-chord-define evil-insert-state-map "kk" 'evil-escape)
 ;; disable evil-escape when input method is on
 (evil-escape-mode 1)
 ;; }}
