@@ -186,6 +186,7 @@
 (require 'init-ui)
 (require 'init-evil)
 (require 'init-modeline)
+(require 'init-term)
 
 
 (provide 'init)
