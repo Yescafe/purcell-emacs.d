@@ -8,12 +8,12 @@
 
 
 ;; Set default window/frame size maximaized
-;; (add-to-list 'initial-frame-alist '(fullscreen . maximized))
-;; (add-to-list 'default-frame-alist '(fullscreen . maximized))
-;; (add-hook 'before-make-frame-hook
-;;           #'(lambda ()
-;;               (add-to-list 'initial-frame-alist '(fullscreen . maximized))
-;;               (add-to-list 'default-frame-alist '(fullscreen . maximized))))
+(add-to-list 'initial-frame-alist '(fullscreen . maximized))
+(add-to-list 'default-frame-alist '(fullscreen . maximized))
+(add-hook 'before-make-frame-hook
+          #'(lambda ()
+              (add-to-list 'initial-frame-alist '(fullscreen . maximized))
+              (add-to-list 'default-frame-alist '(fullscreen . maximized))))
 
 
 ;; Use relative line number
