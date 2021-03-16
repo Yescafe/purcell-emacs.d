@@ -185,6 +185,7 @@
 ;; more personal settings
 (require 'init-ui)
 (require 'init-evil)
+(require 'init-modeline)
 
 
 (provide 'init)

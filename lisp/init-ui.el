@@ -35,24 +35,18 @@
 (setq default-frame-alist '((font . "Iosevka SS05-14")))
 
 
-;; Set default window size
-(add-to-list 'initial-frame-alist '(fullscreen . maximized))
-(add-to-list 'default-frame-alist '(fullscreen . maximized))
-(add-hook 'before-make-frame-hook
-          #'(lambda ()
-              (add-to-list 'initial-frame-alist '(fullscreen . maximized))
-              (add-to-list 'default-frame-alist '(fullscreen . maximized))))
+;; Set default window/frame size maximaized
+;; (add-to-list 'initial-frame-alist '(fullscreen . maximized))
+;; (add-to-list 'default-frame-alist '(fullscreen . maximized))
+;; (add-hook 'before-make-frame-hook
+;;           #'(lambda ()
+;;               (add-to-list 'initial-frame-alist '(fullscreen . maximized))
+;;               (add-to-list 'default-frame-alist '(fullscreen . maximized))))
 
 
-;; Display time on status bar
-(display-time-mode 1)
-(setq display-time-string-forms
-      '(dayname " " day " " monthname " " 24-hours ":" minutes " "))
-
-
-;; Display battery percentage
-(display-battery-mode 1)
-
+;; Use relative line number
+(setq display-line-numbers-type 'relative)
+(global-display-line-numbers-mode)
 
 (provide 'init-ui)
 ;;; init-face.el ends here
