@@ -1,6 +1,6 @@
-;; -*- coding: utf-8; lexical-binding: t; -*-
-
-;; My frequently used commands are listed here
+;;; init-evil.el --- Evil-mode -*- lexical-binding: t; -*-
+;;; Commentary:
+;;; Code:
 
 ;; enable evil-mode
 (require-package 'evil)
@@ -985,3 +985,4 @@ If N > 0, only occurrences in current N lines are renamed."
   (setq evil-default-cursor t))
 
 (provide 'init-evil)
+;;; init-evil.el ends here
