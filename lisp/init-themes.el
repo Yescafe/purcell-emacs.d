@@ -4,14 +4,20 @@
 
 (require-package 'color-theme-sanityinc-solarized)
 (require-package 'color-theme-sanityinc-tomorrow)
+(require-package 'spacemacs-theme)
+(require-package 'dracula-theme)
 
 ;; Don't prompt to confirm theme safety. This avoids problems with
 ;; first-time startup on Emacs > 26.3.
 (setq custom-safe-themes t)
 
 ;; If you don't customize it, this is the theme you get.
-;; p.s.: moved this into `init-face.el'.
-;; (setq-default custom-enabled-themes '(sanityinc-tomorrow-bright))
+;;(setq-default custom-enabled-themes '(sanityinc-tomorrow-bright))
+
+;; Remember last theme
+(require-package 'remember-last-theme)
+(remember-last-theme-enable)
+
 
 ;; Ensure that themes will be applied even if they have not been customized
 (defun reapply-themes ()
@@ -39,6 +45,22 @@
   (setq custom-enabled-themes '(sanityinc-tomorrow-bright))
   (reapply-themes))
 
+;; Toggle themes
+(defun spacemacs-light ()
+  (interactive)
+  (setq custom-enabled-themes '(spacemacs-light))
+  (reapply-themes))
+
+(defun spacemacs-dark ()
+  (interactive)
+  (setq custom-enabled-themes '(spacemacs-dark))
+  (reapply-themes))
+
+(defun dracula ()
+  (interactive)
+  (setq custom-enabled-themes '(dracula))
+  (reapply-themes))
+
 
 (when (maybe-require-package 'dimmer)
   (setq-default dimmer-fraction 0.15)
@@ -53,6 +75,7 @@
     (defun sanityinc/display-non-graphic-p ()
       (not (display-graphic-p)))
     (add-to-list 'dimmer-exclusion-predicates 'sanityinc/display-non-graphic-p)))
+;; Get themes
 
 
 (provide 'init-themes)
