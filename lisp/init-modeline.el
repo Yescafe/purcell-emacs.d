@@ -36,6 +36,8 @@
 (spaceline-toggle-battery-on)
 (spaceline-toggle-input-method-on)
 (spaceline-toggle-buffer-size-off)
+(spaceline-toggle-buffer-position-off)
+
 
 (provide 'init-modeline)
 ;;; init-modeline.el ends here
