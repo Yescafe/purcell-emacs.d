@@ -155,10 +155,6 @@
 
 (require 'init-direnv)
 
-;; Custom
-(require 'init-ui)
-(require 'init-evil)
-
 
 ;;----------------------------------------------------------------------------
 ;; Allow access from emacsclient
@@ -186,7 +182,9 @@
 ;; Allow users to provide an optional "init-local" containing personal settings
 ;;----------------------------------------------------------------------------
 (require 'init-local nil t)
-
+;; more personal settings
+(require 'init-ui)
+(require 'init-evil)
 
 
 (provide 'init)
