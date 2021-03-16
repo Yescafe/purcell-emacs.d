@@ -1,4 +1,4 @@
-;;; init-face.el --- Customized face and UI/GUI -*- lexical-binding: t -*-
+;;; init-ui.el --- Customized UI/GUI -*- lexical-binding: t -*-
 ;;; Commentary:
 ;;; Code:
 
@@ -44,5 +44,15 @@
               (add-to-list 'default-frame-alist '(fullscreen . maximized))))
 
 
-(provide 'init-face)
+;; Display time on status bar
+(display-time-mode 1)
+(setq display-time-string-forms
+      '(dayname " " day " " monthname " " 24-hours ":" minutes " "))
+
+
+;; Display battery percentage
+(display-battery-mode 1)
+
+
+(provide 'init-ui)
 ;;; init-face.el ends here

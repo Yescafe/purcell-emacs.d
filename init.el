@@ -156,8 +156,9 @@
 (require 'init-direnv)
 
 ;; Custom
-(require 'init-face)
+(require 'init-ui)
 (require 'init-evil)
+
 
 ;;----------------------------------------------------------------------------
 ;; Allow access from emacsclient
