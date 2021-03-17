@@ -17,5 +17,9 @@
 (add-hook 'c++-mode-hook
           (lambda () (setq flycheck-clang-language-standard "c++17")))
 
+;; Disable elisp doc checks
+(setq-default flycheck-disabled-checkers '(emacs-lisp-checkdoc))
+
+
 (provide 'init-flycheck)
 ;;; init-flycheck.el ends here
