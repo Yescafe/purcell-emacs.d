@@ -20,5 +20,10 @@
 (setq display-line-numbers-type 'relative)
 (global-display-line-numbers-mode)
 
+
+;; Fullscreen shortcut
+(global-set-key (kbd "C-s-f") #'toggle-frame-fullscreen)
+
+
 (provide 'init-ui)
 ;;; init-face.el ends here
