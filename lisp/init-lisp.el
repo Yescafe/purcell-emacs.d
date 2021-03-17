@@ -27,6 +27,8 @@
       (goto-char (point-max))
       (insert ";;; " fname " ends here\n"))))
 
+(defalias 'el-header 'sanityinc/headerise-elisp)
+
 
 ;; Make C-x C-e run 'eval-region if the region is active
 
