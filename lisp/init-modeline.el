@@ -3,13 +3,20 @@
 ;;; Code:
 
 ;; Requirements
+;; fancy battery supports
 (require-package 'fancy-battery)
 (setq fancy-battery-show-percentage t)
 (fancy-battery-mode)
+
+;; nyan mode supports
 (require-package 'nyan-mode)
+;; t to have it animated, nil for a static version
 (setq nyan-animate-nyancat t)
+;; `t' to make the trail wavy
 (setq nyan-wavy-trail t)
+;; minimum width of the window, below which Nyan Mode will be disabled.
 (setq nyan-minimum-window-width 60)
+;; length of nyan-mode bar, in 8px-wide units
 (setq nyan-bar-length 10)
 (nyan-mode)
 

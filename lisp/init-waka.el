@@ -2,6 +2,7 @@
 ;;; Commentary:
 ;;; Code:
 
+;; Enable waktime-mode
 (require-package 'wakatime-mode)
 (global-wakatime-mode)
 
