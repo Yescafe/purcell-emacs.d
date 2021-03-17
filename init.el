@@ -187,6 +187,7 @@
 (require 'init-evil)
 (require 'init-modeline)
 (require 'init-term)
+(require 'init-waka)
 
 
 (provide 'init)
