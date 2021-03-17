@@ -22,7 +22,7 @@
 
 
 ;; Fullscreen shortcut
-(global-set-key (kbd "C-s-f") #'toggle-frame-fullscreen)
+(global-set-key (kbd "<f12>") #'toggle-frame-fullscreen)
 
 
 (provide 'init-ui)
