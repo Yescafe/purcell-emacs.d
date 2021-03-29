@@ -184,7 +184,7 @@
 (require 'init-local nil t)
 ;; more personal settings
 (require 'init-ui)
-(require 'init-evil)
+;; (require 'init-evil)
 (require 'init-modeline)
 (require 'init-term)
 (require 'init-waka)
