@@ -18,6 +18,12 @@
   (with-eval-after-load 'nxml-mode
     (define-key nxml-mode-map (kbd "S-h") nil))
   (global-set-key (kbd "S-ˍ") 'ns-do-hide-others) ;; what describe-key reports for cmd-option-h
+
+  (global-set-key (kbd "s-a") 'mark-whole-buffer)
+  (global-set-key (kbd "s-s") 'save-buffer)
+  (global-set-key (kbd "s-v") 'yank)
+  (global-set-key (kbd "s-z") 'undo-fu-only-undo)
+  (global-set-key (kbd "s-Z") 'undo-fu-only-redo)
   )
 
 
