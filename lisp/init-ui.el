@@ -3,9 +3,8 @@
 ;;; Code:
 
 ;; Set font face
-(set-frame-font "Iosevka SS05-14")
-(setq default-frame-alist '((font . "Iosevka SS05-14")))
-
+(set-frame-font "CaskaydiaCove Nerd Font-14")
+(setq default-frame-alist '((font . "CaskaydiaCove Nerd Font-14")))
 
 ;; Set default window/frame size maximaized
 (add-to-list 'initial-frame-alist '(fullscreen . maximized))
