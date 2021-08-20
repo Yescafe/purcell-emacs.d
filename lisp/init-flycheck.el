@@ -11,11 +11,13 @@
 
 ;; C standard
 (add-hook 'c-mode-hook
-          (lambda () (setq flycheck-clang-language-standard "c17")))
+          (lambda () (setq flycheck-clang-language-standard "c17")
+            (setq flycheck-gcc-language-standard "c17")))
 
 ;; C++ standard
 (add-hook 'c++-mode-hook
-          (lambda () (setq flycheck-clang-language-standard "c++17")))
+          (lambda () (setq flycheck-clang-language-standard "c++17")
+            (setq flycheck-gcc-language-standard "c++17")))
 
 ;; Disable elisp doc checks
 (setq-default flycheck-disabled-checkers '(emacs-lisp-checkdoc))
