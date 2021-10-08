@@ -114,6 +114,7 @@
 (require 'init-terraform)
 (require 'init-nix)
 (maybe-require-package 'nginx-mode)
+(require 'init-golang)
 
 (require 'init-paredit)
 (require 'init-lisp)
