@@ -54,7 +54,7 @@
 (when (and *is-a-mac* (fboundp 'toggle-frame-fullscreen))
   ;; Command-Option-f to toggle fullscreen mode
   ;; Hint: Customize `ns-use-native-fullscreen'
-  (global-set-key (kbd "M-ƒ") 'toggle-frame-fullscreen))
+  (global-set-key (kbd "M-F") 'toggle-frame-fullscreen))
 
 ;; TODO: use seethru package instead?
 (global-set-key (kbd "M-C-8") (lambda () (interactive) (sanityinc/adjust-opacity nil -2)))
